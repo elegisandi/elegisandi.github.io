@@ -11,13 +11,7 @@
     <script type="text/javaScript">
         window.onload = function () {
             if (window.location.search.includes('print')) {
-                const link = document.createElement('link');
-                link.rel = 'stylesheet';
-                link.href = 'assets/print.css';
-                link.onload = function () {
-                    window.print();
-                };
-                document.head.appendChild(link);
+                window.print();
             }
         }
     </script>
@@ -63,7 +57,7 @@
 
         <section class="summary">
             <h2>Summary</h2>
-            <p>
+            <p class="text-primary">
                 I'm an innovative web developer with 10+ years of experience in designing, building, and optimizing
                 high-performance web applications.
                 Proficient in both front-end and back-end technologies, including PHP, SQL, Laravel, Livewire, ReactJS,
@@ -151,7 +145,6 @@
                         <li class="badge">PHP</li>
                         <li class="badge">SQL</li>
                         <li class="badge">Laravel</li>
-                        <li class="badge">Livewire</li>
                         <li class="badge">Filament PHP</li>
                         <li class="badge">Node.js</li>
                     </ul>
@@ -159,6 +152,7 @@
                 <div class="group">
                     <h3>Frontend</h3>
                     <ul>
+                        <li class="badge">Livewire</li>
                         <li class="badge">React</li>
                         <li class="badge">Next.js</li>
                         <li class="badge">Vue.js</li>
@@ -179,18 +173,6 @@
                     </ul>
                 </div>
                 <div class="group">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li class="badge">VSCode</li>
-                        <li class="badge">Laravel Valet</li>
-                        <li class="badge">Laravel Sail/Docker</li>
-                        <li class="badge">Github Copilot</li>
-                        <li class="badge">Git/Github</li>
-                        <li class="badge">Jira Software</li>
-                        <li class="badge">Postman</li>
-                    </ul>
-                </div>
-                <div class="group">
                     <h3>Others</h3>
                     <ul>
                         <li class="badge">Project Management</li>
@@ -203,20 +185,187 @@
             </div>
         </section>
 
+        <section class="skills-chart">
+            <h2>Years of Experience By Skill</h2>
+            <div class="chart-container">
+                <div class="chart-item">
+                    <label>&nbsp;</label>
+                    <div class="x-axis">
+                        <span>0</span>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10+</span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>PHP</label>
+                    <div class="progress">
+                        <span class="value high" style="width: 100%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>SQL</label>
+                    <div class="progress">
+                        <span class="value high" style="width: 100%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>Laravel</label>
+                    <div class="progress">
+                        <span class="value high" style="width: 100%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>Filament PHP</label>
+                    <div class="progress">
+                        <span class="value" style="width: 30%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>Node.js</label>
+                    <div class="progress">
+                        <span class="value mid" style="width: 40%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>Livewire</label>
+                    <div class="progress">
+                        <span class="value mid" style="width: 50%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>React</label>
+                    <div class="progress">
+                        <span class="value mid" style="width: 50%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>Next.js</label>
+                    <div class="progress">
+                        <span class="value mid" style="width: 40%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>Vue.js</label>
+                    <div class="progress">
+                        <span class="value mid" style="width: 40%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>Javascript</label>
+                    <div class="progress">
+                        <span class="value high" style="width: 100%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>HTML</label>
+                    <div class="progress">
+                        <span class="value high" style="width: 100%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>CSS</label>
+                    <div class="progress">
+                        <span class="value high" style="width: 100%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>MySQL/MariaDB</label>
+                    <div class="progress">
+                        <span class="value high" style="width: 100%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>PostgreSQL</label>
+                    <div class="progress">
+                        <span class="value mid" style="width: 50%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>MongoDB</label>
+                    <div class="progress">
+                        <span class="value mid" style="width: 40%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>Redis</label>
+                    <div class="progress">
+                        <span class="value high" style="width: 90%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>Elasticsearch</label>
+                    <div class="progress">
+                        <span class="value mid" style="width: 40%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>Project Management</label>
+                    <div class="progress">
+                        <span class="value mid" style="width: 50%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>Amazon Web Services</label>
+                    <div class="progress">
+                        <span class="value mid" style="width: 50%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>Google APIs</label>
+                    <div class="progress">
+                        <span class="value mid" style="width: 50%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>Google Ads API</label>
+                    <div class="progress">
+                        <span class="value" style="width: 30%;"></span>
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <label>CloudFlare API</label>
+                    <div class="progress">
+                        <span class="value" style="width: 10%;"></span>
+                    </div>
+                </div>
+        </section>
+
+        <section>
+            <h2>Tools</h2>
+            <ul>
+                <li class="badge">VSCode</li>
+                <li class="badge">Laravel Valet</li>
+                <li class="badge">Laravel Sail/Docker</li>
+                <li class="badge">Github Copilot</li>
+                <li class="badge">Git/Github</li>
+                <li class="badge">Jira Software</li>
+                <li class="badge">Postman</li>
+            </ul>
+        </section>
+
         <section class="languages">
             <h2>Languages</h2>
-            <p>English, Filipino, Cebuano</p>
+            <p class="text-primary">English, Filipino, Cebuano</p>
         </section>
 
         <section class="location">
             <h2>Location</h2>
-            <p>Compostela, Cebu, Philippines</p>
+            <p class="text-primary">Compostela, Cebu, Philippines</p>
         </section>
 
         <section class="work-setup">
             <h2>Preferred Work Setup</h2>
-            <p>Remote, Hybrid</p>
+            <p class="text-primary">Remote, Hybrid</p>
         </section>
+    </div>
 </body>
 
 </html>
