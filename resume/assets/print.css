@@ -1,0 +1,16 @@
+body {
+    background-color: white !important;
+}
+
+header {
+    position: relative !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.container {
+    max-width: auto !important;
+    margin: auto !important;
+    background: white !important;
+    border-radius: 0 !important;
+}

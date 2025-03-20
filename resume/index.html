@@ -8,6 +8,19 @@
     <link rel="preconnect" href="https://fonts.bunny.net" />
     <link href="https://fonts.bunny.net/css?family=inter:300,400,500|alumni-sans:600" rel="stylesheet" />
     <link href="assets/main.css" rel="stylesheet" />
+    <script type="text/javaScript">
+        window.onload = function () {
+            if (window.location.search.includes('print')) {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = 'assets/print.css';
+                link.onload = function () {
+                    window.print();
+                };
+                document.head.appendChild(link);
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -151,6 +164,27 @@
                         <li class="badge">JavaScript</li>
                         <li class="badge">HTML</li>
                         <li class="badge">CSS</li>
+                    </ul>
+                </div>
+                <div class="group">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li class="badge">MySQL/MariaDB</li>
+                        <li class="badge">PostgreSQL</li>
+                        <li class="badge">MongoDB</li>
+                        <li class="badge">Redis</li>
+                        <li class="badge">Elasticsearch</li>
+                    </ul>
+                </div>
+                <div class="group">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li class="badge">VSCode</li>
+                        <li class="badge">Laravel Valet</li>
+                        <li class="badge">Laravel Sail/Docker</li>
+                        <li class="badge">Github Copilot</li>
+                        <li class="badge">Git/Github</li>
+                        <li class="badge">Postman</li>
                     </ul>
                 </div>
                 <div class="group">
