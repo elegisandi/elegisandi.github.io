@@ -130,7 +130,7 @@ a.icon-link:hover>svg {
     content: "";
     position: absolute;
     top: 18px;
-    left: -20px;
+    left: -19px;
     border: 10px solid transparent;
     border-right-color: var(--timeline-item-bg-color);
 }
