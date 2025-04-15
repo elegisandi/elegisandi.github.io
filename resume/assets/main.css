@@ -211,7 +211,6 @@ ul:has(.badge) {
     height: 1.25rem;
     background-color: var(--chart-bg-color);
     border-radius: var(--border-radius-sm);
-    ;
 }
 
 .chart-item .progress .value {
@@ -267,6 +266,11 @@ ul:has(.badge) {
 @media only print {
     body {
         background-color: white !important;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 
     body header {
