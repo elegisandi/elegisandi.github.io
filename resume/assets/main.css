@@ -103,6 +103,10 @@ a.icon-link {
     color: var(--primary-color);
 }
 
+.text-secondary {
+    color: var(--secondary-color);
+}
+
 .timeline {
     position: relative;
 
@@ -172,19 +176,30 @@ a.icon-link {
     gap: 0.75rem;
 }
 
-.links li {
-    label {
-        font-weight: 400;
-        color: var(--secondary-color);
+.links li a {
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-decoration: none;
+
+    &.stackoverflow span {
+        width: 28px;
+        height: 28px;
+        background: orange;
+        border-radius: 100%;
+        display: inline-flex;
+
+        svg {
+            padding: 2px;
+            margin: auto;
+        }
     }
 
-    a {
-        word-wrap: break-word;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
+    &:hover {
+        text-decoration: underline;
     }
 }
 
